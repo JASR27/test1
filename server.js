@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 // Inicializa la aplicación de Express y define el puerto
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 // Configura el cliente de OpenAI con la API key desde el archivo .env
 const client = new OpenAI({
